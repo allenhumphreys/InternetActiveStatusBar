@@ -11,7 +11,21 @@
 		4D4739FD228B8F6500CE01A9 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4D4739FC228B8F6500CE01A9 /* ViewController.swift */; };
 		4D4739FF228B8F6700CE01A9 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 4D4739FE228B8F6700CE01A9 /* Assets.xcassets */; };
 		4D473A02228B8F6700CE01A9 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 4D473A00228B8F6700CE01A9 /* Main.storyboard */; };
+		4D473A11228B90AB00CE01A9 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4D473A10228B90AB00CE01A9 /* AppDelegate.swift */; };
+		4D473A13228B90AC00CE01A9 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 4D473A12228B90AC00CE01A9 /* Assets.xcassets */; };
+		4D473A16228B90AC00CE01A9 /* MainMenu.xib in Resources */ = {isa = PBXBuildFile; fileRef = 4D473A14228B90AC00CE01A9 /* MainMenu.xib */; };
+		4D473A1C228B90B300CE01A9 /* LaunchHelper.app in Resources */ = {isa = PBXBuildFile; fileRef = 4D473A0E228B90AA00CE01A9 /* LaunchHelper.app */; };
 /* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		4D473A1D228B90B300CE01A9 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 4D4739EF228B8F6500CE01A9 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 4D473A0D228B90AA00CE01A9;
+			remoteInfo = LaunchHelper;
+		};
+/* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
 		4D4739F7228B8F6500CE01A9 /* InternetActiveStatusBar.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = InternetActiveStatusBar.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -21,10 +35,23 @@
 		4D473A01228B8F6700CE01A9 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		4D473A03228B8F6700CE01A9 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		4D473A04228B8F6700CE01A9 /* InternetActiveStatusBar.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = InternetActiveStatusBar.entitlements; sourceTree = "<group>"; };
+		4D473A0E228B90AA00CE01A9 /* LaunchHelper.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = LaunchHelper.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		4D473A10228B90AB00CE01A9 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		4D473A12228B90AC00CE01A9 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		4D473A15228B90AC00CE01A9 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/MainMenu.xib; sourceTree = "<group>"; };
+		4D473A17228B90AC00CE01A9 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		4D473A18228B90AC00CE01A9 /* LaunchHelper.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = LaunchHelper.entitlements; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
 		4D4739F4228B8F6500CE01A9 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		4D473A0B228B90AA00CE01A9 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -38,6 +65,7 @@
 			isa = PBXGroup;
 			children = (
 				4D4739F9228B8F6500CE01A9 /* InternetActiveStatusBar */,
+				4D473A0F228B90AB00CE01A9 /* LaunchHelper */,
 				4D4739F8228B8F6500CE01A9 /* Products */,
 			);
 			sourceTree = "<group>";
@@ -46,6 +74,7 @@
 			isa = PBXGroup;
 			children = (
 				4D4739F7228B8F6500CE01A9 /* InternetActiveStatusBar.app */,
+				4D473A0E228B90AA00CE01A9 /* LaunchHelper.app */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -63,6 +92,18 @@
 			path = InternetActiveStatusBar;
 			sourceTree = "<group>";
 		};
+		4D473A0F228B90AB00CE01A9 /* LaunchHelper */ = {
+			isa = PBXGroup;
+			children = (
+				4D473A10228B90AB00CE01A9 /* AppDelegate.swift */,
+				4D473A12228B90AC00CE01A9 /* Assets.xcassets */,
+				4D473A14228B90AC00CE01A9 /* MainMenu.xib */,
+				4D473A17228B90AC00CE01A9 /* Info.plist */,
+				4D473A18228B90AC00CE01A9 /* LaunchHelper.entitlements */,
+			);
+			path = LaunchHelper;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -77,10 +118,28 @@
 			buildRules = (
 			);
 			dependencies = (
+				4D473A1E228B90B300CE01A9 /* PBXTargetDependency */,
 			);
 			name = InternetActiveStatusBar;
 			productName = InternetActiveStatusBar;
 			productReference = 4D4739F7228B8F6500CE01A9 /* InternetActiveStatusBar.app */;
+			productType = "com.apple.product-type.application";
+		};
+		4D473A0D228B90AA00CE01A9 /* LaunchHelper */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 4D473A1B228B90AC00CE01A9 /* Build configuration list for PBXNativeTarget "LaunchHelper" */;
+			buildPhases = (
+				4D473A0A228B90AA00CE01A9 /* Sources */,
+				4D473A0B228B90AA00CE01A9 /* Frameworks */,
+				4D473A0C228B90AA00CE01A9 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = LaunchHelper;
+			productName = LaunchHelper;
+			productReference = 4D473A0E228B90AA00CE01A9 /* LaunchHelper.app */;
 			productType = "com.apple.product-type.application";
 		};
 /* End PBXNativeTarget section */
@@ -94,6 +153,9 @@
 				ORGANIZATIONNAME = Demo;
 				TargetAttributes = {
 					4D4739F6228B8F6500CE01A9 = {
+						CreatedOnToolsVersion = 10.2.1;
+					};
+					4D473A0D228B90AA00CE01A9 = {
 						CreatedOnToolsVersion = 10.2.1;
 					};
 				};
@@ -112,6 +174,7 @@
 			projectRoot = "";
 			targets = (
 				4D4739F6228B8F6500CE01A9 /* InternetActiveStatusBar */,
+				4D473A0D228B90AA00CE01A9 /* LaunchHelper */,
 			);
 		};
 /* End PBXProject section */
@@ -122,7 +185,17 @@
 			buildActionMask = 2147483647;
 			files = (
 				4D4739FF228B8F6700CE01A9 /* Assets.xcassets in Resources */,
+				4D473A1C228B90B300CE01A9 /* LaunchHelper.app in Resources */,
 				4D473A02228B8F6700CE01A9 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		4D473A0C228B90AA00CE01A9 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				4D473A13228B90AC00CE01A9 /* Assets.xcassets in Resources */,
+				4D473A16228B90AC00CE01A9 /* MainMenu.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -138,7 +211,23 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		4D473A0A228B90AA00CE01A9 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				4D473A11228B90AB00CE01A9 /* AppDelegate.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		4D473A1E228B90B300CE01A9 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 4D473A0D228B90AA00CE01A9 /* LaunchHelper */;
+			targetProxy = 4D473A1D228B90B300CE01A9 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
 		4D473A00228B8F6700CE01A9 /* Main.storyboard */ = {
@@ -147,6 +236,14 @@
 				4D473A01228B8F6700CE01A9 /* Base */,
 			);
 			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		4D473A14228B90AC00CE01A9 /* MainMenu.xib */ = {
+			isa = PBXVariantGroup;
+			children = (
+				4D473A15228B90AC00CE01A9 /* Base */,
+			);
+			name = MainMenu.xib;
 			sourceTree = "<group>";
 		};
 /* End PBXVariantGroup section */
@@ -270,6 +367,7 @@
 		4D473A08228B8F6700CE01A9 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_ENTITLEMENTS = InternetActiveStatusBar/InternetActiveStatusBar.entitlements;
 				CODE_SIGN_STYLE = Automatic;
@@ -288,6 +386,7 @@
 		4D473A09228B8F6700CE01A9 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_ENTITLEMENTS = InternetActiveStatusBar/InternetActiveStatusBar.entitlements;
 				CODE_SIGN_STYLE = Automatic;
@@ -298,6 +397,42 @@
 					"@executable_path/../Frameworks",
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = com.demo.InternetActiveStatusBar;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+			};
+			name = Release;
+		};
+		4D473A19228B90AC00CE01A9 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_ENTITLEMENTS = LaunchHelper/LaunchHelper.entitlements;
+				CODE_SIGN_STYLE = Automatic;
+				COMBINE_HIDPI_IMAGES = YES;
+				INFOPLIST_FILE = LaunchHelper/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.demo.LaunchHelper;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+			};
+			name = Debug;
+		};
+		4D473A1A228B90AC00CE01A9 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_ENTITLEMENTS = LaunchHelper/LaunchHelper.entitlements;
+				CODE_SIGN_STYLE = Automatic;
+				COMBINE_HIDPI_IMAGES = YES;
+				INFOPLIST_FILE = LaunchHelper/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.demo.LaunchHelper;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
 			};
@@ -320,6 +455,15 @@
 			buildConfigurations = (
 				4D473A08228B8F6700CE01A9 /* Debug */,
 				4D473A09228B8F6700CE01A9 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		4D473A1B228B90AC00CE01A9 /* Build configuration list for PBXNativeTarget "LaunchHelper" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				4D473A19228B90AC00CE01A9 /* Debug */,
+				4D473A1A228B90AC00CE01A9 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
