@@ -1,11 +1,3 @@
-//
-//  AppDelegate.swift
-//  InternetActiveStatusBar
-//
-//  Created by Allen Humphreys on 5/14/19.
-//  Copyright © 2019 Demo. All rights reserved.
-//
-
 import Cocoa
 
 @NSApplicationMain
