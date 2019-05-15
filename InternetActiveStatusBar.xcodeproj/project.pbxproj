@@ -15,10 +15,18 @@
 		4D473A13228B90AC00CE01A9 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 4D473A12228B90AC00CE01A9 /* Assets.xcassets */; };
 		4D473A1C228B90B300CE01A9 /* LaunchHelper.app in Resources */ = {isa = PBXBuildFile; fileRef = 4D473A0E228B90AA00CE01A9 /* LaunchHelper.app */; };
 		4D473A22228B926600CE01A9 /* main.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4D473A21228B926600CE01A9 /* main.swift */; };
+		4D473A24228B94A100CE01A9 /* LaunchAtLogin.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4D473A23228B94A100CE01A9 /* LaunchAtLogin.swift */; };
+		4D473A25228B94A100CE01A9 /* LaunchAtLogin.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4D473A23228B94A100CE01A9 /* LaunchAtLogin.swift */; };
+		4D473A28228BA16000CE01A9 /* LaunchHelper.app in Resources */ = {isa = PBXBuildFile; fileRef = 4D473A0E228B90AA00CE01A9 /* LaunchHelper.app */; };
+		4D473A29228BA16800CE01A9 /* LaunchHelper.app in Resources */ = {isa = PBXBuildFile; fileRef = 4D473A0E228B90AA00CE01A9 /* LaunchHelper.app */; };
+		4D473A2A228BA17100CE01A9 /* LaunchHelper.app in Resources */ = {isa = PBXBuildFile; fileRef = 4D473A0E228B90AA00CE01A9 /* LaunchHelper.app */; };
+		4DBCCD9E228BA1FC0086B73B /* LaunchHelper.app in Resources */ = {isa = PBXBuildFile; fileRef = 4D473A0E228B90AA00CE01A9 /* LaunchHelper.app */; };
+		4DBCCD9F228BA1FF0086B73B /* LaunchHelper.app in Resources */ = {isa = PBXBuildFile; fileRef = 4D473A0E228B90AA00CE01A9 /* LaunchHelper.app */; };
+		4DBCCDA0228BA2150086B73B /* LaunchHelper.app in Resources */ = {isa = PBXBuildFile; fileRef = 4D473A0E228B90AA00CE01A9 /* LaunchHelper.app */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
-		4D473A1D228B90B300CE01A9 /* PBXContainerItemProxy */ = {
+		4DBCCDA1228BA2150086B73B /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = 4D4739EF228B8F6500CE01A9 /* Project object */;
 			proxyType = 1;
@@ -41,6 +49,7 @@
 		4D473A17228B90AC00CE01A9 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		4D473A18228B90AC00CE01A9 /* LaunchHelper.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = LaunchHelper.entitlements; sourceTree = "<group>"; };
 		4D473A21228B926600CE01A9 /* main.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = main.swift; sourceTree = "<group>"; };
+		4D473A23228B94A100CE01A9 /* LaunchAtLogin.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LaunchAtLogin.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -64,6 +73,7 @@
 		4D4739EE228B8F6500CE01A9 = {
 			isa = PBXGroup;
 			children = (
+				4D473A23228B94A100CE01A9 /* LaunchAtLogin.swift */,
 				4D4739F9228B8F6500CE01A9 /* InternetActiveStatusBar */,
 				4D473A0F228B90AB00CE01A9 /* LaunchHelper */,
 				4D4739F8228B8F6500CE01A9 /* Products */,
@@ -118,7 +128,7 @@
 			buildRules = (
 			);
 			dependencies = (
-				4D473A1E228B90B300CE01A9 /* PBXTargetDependency */,
+				4DBCCDA2228BA2150086B73B /* PBXTargetDependency */,
 			);
 			name = InternetActiveStatusBar;
 			productName = InternetActiveStatusBar;
@@ -184,8 +194,14 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				4D473A29228BA16800CE01A9 /* LaunchHelper.app in Resources */,
 				4D4739FF228B8F6700CE01A9 /* Assets.xcassets in Resources */,
+				4DBCCD9F228BA1FF0086B73B /* LaunchHelper.app in Resources */,
 				4D473A1C228B90B300CE01A9 /* LaunchHelper.app in Resources */,
+				4D473A28228BA16000CE01A9 /* LaunchHelper.app in Resources */,
+				4DBCCD9E228BA1FC0086B73B /* LaunchHelper.app in Resources */,
+				4D473A2A228BA17100CE01A9 /* LaunchHelper.app in Resources */,
+				4DBCCDA0228BA2150086B73B /* LaunchHelper.app in Resources */,
 				4D473A02228B8F6700CE01A9 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -205,6 +221,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				4D473A24228B94A100CE01A9 /* LaunchAtLogin.swift in Sources */,
 				4D4739FD228B8F6500CE01A9 /* ViewController.swift in Sources */,
 				4D4739FB228B8F6500CE01A9 /* AppDelegate.swift in Sources */,
 			);
@@ -214,6 +231,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				4D473A25228B94A100CE01A9 /* LaunchAtLogin.swift in Sources */,
 				4D473A11228B90AB00CE01A9 /* AppDelegate.swift in Sources */,
 				4D473A22228B926600CE01A9 /* main.swift in Sources */,
 			);
@@ -222,10 +240,10 @@
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXTargetDependency section */
-		4D473A1E228B90B300CE01A9 /* PBXTargetDependency */ = {
+		4DBCCDA2228BA2150086B73B /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
 			target = 4D473A0D228B90AA00CE01A9 /* LaunchHelper */;
-			targetProxy = 4D473A1D228B90B300CE01A9 /* PBXContainerItemProxy */;
+			targetProxy = 4DBCCDA1228BA2150086B73B /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
 
@@ -369,7 +387,7 @@
 					"$(inherited)",
 					"@executable_path/../Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = com.demo.InternetActiveStatusBar;
+				PRODUCT_BUNDLE_IDENTIFIER = com.demo.internetactivestatusbar;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
 			};
@@ -388,7 +406,7 @@
 					"$(inherited)",
 					"@executable_path/../Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = com.demo.InternetActiveStatusBar;
+				PRODUCT_BUNDLE_IDENTIFIER = com.demo.internetactivestatusbar;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
 			};
@@ -406,7 +424,7 @@
 					"$(inherited)",
 					"@executable_path/../Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = com.demo.LaunchHelper;
+				PRODUCT_BUNDLE_IDENTIFIER = com.demo.launchhelper;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
 			};
@@ -424,7 +442,7 @@
 					"$(inherited)",
 					"@executable_path/../Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = com.demo.LaunchHelper;
+				PRODUCT_BUNDLE_IDENTIFIER = com.demo.launchhelper;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
 			};
