@@ -6,12 +6,20 @@ let kItemWidth: CGFloat = 60
 @NSApplicationMain
 class AppDelegate: NSObject, NSApplicationDelegate {
 
+    private lazy var aboutWindowController: NSWindowController? = {
+        let storyboard = NSStoryboard(name: "Main", bundle: nil)
+        let controller = storyboard.instantiateController(withIdentifier: "AboutWindowController") as? NSWindowController
+        NotificationCenter.default.addObserver(forName: NSWindow.didResignMainNotification, object: controller?.window, queue: .main) { _ in
+            controller?.close()
+        }
+        return controller
+    }()
+
     func applicationDidFinishLaunching(_ aNotification: Notification) {
         let isLauncherRunning = NSWorkspace.shared.runningApplications.contains { $0.bundleIdentifier == kLaunchHelperAppID }
 
         if isLauncherRunning {
-            DistributedNotificationCenter.default().post(name: .killLauncher,
-                                                         object: nil)
+            DistributedNotificationCenter.default().post(name: .killLauncher, object: nil)
         }
 
         SMLoginItemSetEnabled(kLaunchHelperAppID as CFString, UserDefaults.group.shouldLaunchAtLogin)
@@ -52,8 +60,8 @@ class AppDelegate: NSObject, NSApplicationDelegate {
 
     @objc
     func displayAbout() {
-//        NSApp.activate(ignoringOtherApps: true)
-//        aboutWindowController?.window?.makeKeyAndOrderFront(self)
+        NSApp.activate(ignoringOtherApps: true)
+        aboutWindowController?.window?.makeKeyAndOrderFront(self)
     }
 
     @objc

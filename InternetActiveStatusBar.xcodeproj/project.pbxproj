@@ -13,16 +13,10 @@
 		4D473A02228B8F6700CE01A9 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 4D473A00228B8F6700CE01A9 /* Main.storyboard */; };
 		4D473A11228B90AB00CE01A9 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4D473A10228B90AB00CE01A9 /* AppDelegate.swift */; };
 		4D473A13228B90AC00CE01A9 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 4D473A12228B90AC00CE01A9 /* Assets.xcassets */; };
-		4D473A1C228B90B300CE01A9 /* LaunchHelper.app in Resources */ = {isa = PBXBuildFile; fileRef = 4D473A0E228B90AA00CE01A9 /* LaunchHelper.app */; };
 		4D473A22228B926600CE01A9 /* main.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4D473A21228B926600CE01A9 /* main.swift */; };
 		4D473A24228B94A100CE01A9 /* LaunchAtLogin.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4D473A23228B94A100CE01A9 /* LaunchAtLogin.swift */; };
 		4D473A25228B94A100CE01A9 /* LaunchAtLogin.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4D473A23228B94A100CE01A9 /* LaunchAtLogin.swift */; };
-		4D473A28228BA16000CE01A9 /* LaunchHelper.app in Resources */ = {isa = PBXBuildFile; fileRef = 4D473A0E228B90AA00CE01A9 /* LaunchHelper.app */; };
-		4D473A29228BA16800CE01A9 /* LaunchHelper.app in Resources */ = {isa = PBXBuildFile; fileRef = 4D473A0E228B90AA00CE01A9 /* LaunchHelper.app */; };
-		4D473A2A228BA17100CE01A9 /* LaunchHelper.app in Resources */ = {isa = PBXBuildFile; fileRef = 4D473A0E228B90AA00CE01A9 /* LaunchHelper.app */; };
-		4DBCCD9E228BA1FC0086B73B /* LaunchHelper.app in Resources */ = {isa = PBXBuildFile; fileRef = 4D473A0E228B90AA00CE01A9 /* LaunchHelper.app */; };
-		4DBCCD9F228BA1FF0086B73B /* LaunchHelper.app in Resources */ = {isa = PBXBuildFile; fileRef = 4D473A0E228B90AA00CE01A9 /* LaunchHelper.app */; };
-		4DBCCDA0228BA2150086B73B /* LaunchHelper.app in Resources */ = {isa = PBXBuildFile; fileRef = 4D473A0E228B90AA00CE01A9 /* LaunchHelper.app */; };
+		4DBCCDA7228BA3C00086B73B /* LaunchHelper.app in CopyFiles */ = {isa = PBXBuildFile; fileRef = 4D473A0E228B90AA00CE01A9 /* LaunchHelper.app */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -34,6 +28,19 @@
 			remoteInfo = LaunchHelper;
 		};
 /* End PBXContainerItemProxy section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		4DBCCDA6228BA3B70086B73B /* CopyFiles */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = Contents/Library/LoginItems;
+			dstSubfolderSpec = 1;
+			files = (
+				4DBCCDA7228BA3C00086B73B /* LaunchHelper.app in CopyFiles */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
 		4D4739F7228B8F6500CE01A9 /* InternetActiveStatusBar.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = InternetActiveStatusBar.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -124,6 +131,7 @@
 				4D4739F3228B8F6500CE01A9 /* Sources */,
 				4D4739F4228B8F6500CE01A9 /* Frameworks */,
 				4D4739F5228B8F6500CE01A9 /* Resources */,
+				4DBCCDA6228BA3B70086B73B /* CopyFiles */,
 			);
 			buildRules = (
 			);
@@ -164,9 +172,19 @@
 				TargetAttributes = {
 					4D4739F6228B8F6500CE01A9 = {
 						CreatedOnToolsVersion = 10.2.1;
+						SystemCapabilities = {
+							com.apple.ApplicationGroups.Mac = {
+								enabled = 1;
+							};
+						};
 					};
 					4D473A0D228B90AA00CE01A9 = {
 						CreatedOnToolsVersion = 10.2.1;
+						SystemCapabilities = {
+							com.apple.ApplicationGroups.Mac = {
+								enabled = 1;
+							};
+						};
 					};
 				};
 			};
@@ -194,14 +212,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				4D473A29228BA16800CE01A9 /* LaunchHelper.app in Resources */,
 				4D4739FF228B8F6700CE01A9 /* Assets.xcassets in Resources */,
-				4DBCCD9F228BA1FF0086B73B /* LaunchHelper.app in Resources */,
-				4D473A1C228B90B300CE01A9 /* LaunchHelper.app in Resources */,
-				4D473A28228BA16000CE01A9 /* LaunchHelper.app in Resources */,
-				4DBCCD9E228BA1FC0086B73B /* LaunchHelper.app in Resources */,
-				4D473A2A228BA17100CE01A9 /* LaunchHelper.app in Resources */,
-				4DBCCDA0228BA2150086B73B /* LaunchHelper.app in Resources */,
 				4D473A02228B8F6700CE01A9 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -380,8 +391,9 @@
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_ENTITLEMENTS = InternetActiveStatusBar/InternetActiveStatusBar.entitlements;
-				CODE_SIGN_STYLE = Automatic;
+				CODE_SIGN_STYLE = Manual;
 				COMBINE_HIDPI_IMAGES = YES;
+				DEVELOPMENT_TEAM = "";
 				INFOPLIST_FILE = InternetActiveStatusBar/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
@@ -389,6 +401,7 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = com.demo.internetactivestatusbar;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
 				SWIFT_VERSION = 5.0;
 			};
 			name = Debug;
@@ -399,8 +412,9 @@
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_ENTITLEMENTS = InternetActiveStatusBar/InternetActiveStatusBar.entitlements;
-				CODE_SIGN_STYLE = Automatic;
+				CODE_SIGN_STYLE = Manual;
 				COMBINE_HIDPI_IMAGES = YES;
+				DEVELOPMENT_TEAM = "";
 				INFOPLIST_FILE = InternetActiveStatusBar/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
@@ -408,6 +422,7 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = com.demo.internetactivestatusbar;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
 				SWIFT_VERSION = 5.0;
 			};
 			name = Release;
@@ -417,8 +432,9 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_ENTITLEMENTS = LaunchHelper/LaunchHelper.entitlements;
-				CODE_SIGN_STYLE = Automatic;
+				CODE_SIGN_STYLE = Manual;
 				COMBINE_HIDPI_IMAGES = YES;
+				DEVELOPMENT_TEAM = "";
 				INFOPLIST_FILE = LaunchHelper/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
@@ -426,6 +442,8 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = com.demo.launchhelper;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
+				SKIP_INSTALL = YES;
 				SWIFT_VERSION = 5.0;
 			};
 			name = Debug;
@@ -435,8 +453,9 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_ENTITLEMENTS = LaunchHelper/LaunchHelper.entitlements;
-				CODE_SIGN_STYLE = Automatic;
+				CODE_SIGN_STYLE = Manual;
 				COMBINE_HIDPI_IMAGES = YES;
+				DEVELOPMENT_TEAM = "";
 				INFOPLIST_FILE = LaunchHelper/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
@@ -444,6 +463,8 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = com.demo.launchhelper;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
+				SKIP_INSTALL = YES;
 				SWIFT_VERSION = 5.0;
 			};
 			name = Release;
